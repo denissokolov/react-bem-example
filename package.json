@@ -1,0 +1,33 @@
+{
+  "name": "react-bem-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js --progress --inline --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denissokolov/react-bem-example.git"
+  },
+  "author": "Denis Sokolov <dnssokolov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denissokolov/react-bem-example/issues"
+  },
+  "homepage": "https://github.com/denissokolov/react-bem-example#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
