@@ -1,4 +1,4 @@
-# React + BEM Examples
+# React + BEM Example
 
 Implementation of header component from BEM documentation https://en.bem.info/methodology/key-concepts/
 
