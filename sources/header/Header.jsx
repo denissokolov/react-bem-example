@@ -7,6 +7,8 @@ import SearchForm from "./SearchForm";
 import AuthForm from "./AuthForm";
 import UserInfo from "./UserInfo";
 
+import "./header.scss";
+
 const Header = ({ isAuthorized = false }) => {
   const tabs = [{
     title: "Tab 1",
@@ -24,20 +26,20 @@ const Header = ({ isAuthorized = false }) => {
 
   return (
     <header className="header">
-      <div className="header__logo">
-        <Logo big />
-      </div>
+      <Tabs items={tabs} active={1} />
 
-      <div className="header__tabs">
-        <Tabs items={tabs} active={1} />
-      </div>
+      <div className="header__content">
+        <div className="header__logo">
+          <Logo big />
+        </div>
 
-      <div className="header__search">
-        <SearchForm />
-      </div>
+        <div className="header__search">
+          <SearchForm />
+        </div>
 
-      <div className="header__auth">
-        {isAuthorized ? <UserInfo /> : <AuthForm />}
+        <div className="header__auth">
+          {isAuthorized ? <UserInfo /> : <AuthForm />}
+        </div>
       </div>
     </header>
   );

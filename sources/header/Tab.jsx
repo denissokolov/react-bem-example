@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
+
+import "./tab.scss";
 
 class Tab extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
     index: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    className: PropTypes.string,
+    active: PropTypes.bool,
   };
 
   onClick = (event) => {
@@ -17,11 +20,11 @@ class Tab extends React.Component {
   };
 
   render() {
-    const { title, className } = this.props;
+    const { title, active } = this.props;
 
     return (
       <a
-        className={className}
+        className={classNames("tab", { "tab--active": active })}
         onClick={this.onClick}
       >
         {title}

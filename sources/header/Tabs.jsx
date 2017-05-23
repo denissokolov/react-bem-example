@@ -1,7 +1,8 @@
 import React from "react";
-import classNames from "classnames";
 import PropTypes from "prop-types";
 import Tab from "./Tab";
+
+import "./tabs.scss";
 
 class Tabs extends React.Component {
   static propTypes = {
@@ -27,13 +28,15 @@ class Tabs extends React.Component {
     return (
       <div className="tabs">
         {items.map(tab => (
-          <Tab
-            onClick={this.onTabClick}
-            index={tab.index}
-            title={tab.title}
-            className={classNames("tabs__item", { "tabs__item--active": activeTabIndex === tab.index })}
-            key={tab.index}
-          />
+          <span className="tabs__item">
+            <Tab
+              onClick={this.onTabClick}
+              index={tab.index}
+              title={tab.title}
+              active={activeTabIndex === tab.index}
+              key={tab.index}
+            />
+          </span>
         ))}
       </div>
     );
