@@ -1,7 +1,8 @@
 import React from "react";
-
 import TextField from "../common/TextField";
 import Button from "../common/Button";
+
+import "./search-form.scss";
 
 class SearchForm extends React.Component {
   state = {

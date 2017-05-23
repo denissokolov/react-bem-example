@@ -2,10 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
+import "./logo.scss";
+
 const Logo = ({ big = false }) => (
-  <span className={classNames("logo", {
-    "logo--big": big,
-  })} />
+  <div
+    className={classNames("logo", {
+      "logo--big": big,
+    })}
+  >
+    LOGO
+  </div>
 );
 
 Logo.propTypes = {

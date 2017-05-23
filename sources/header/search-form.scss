@@ -1,0 +1,11 @@
+.search-form {
+  display: flex;
+
+  &__field {
+    width: 100%;
+  }
+
+  &__submit {
+    padding-left: 5px;
+  }
+}

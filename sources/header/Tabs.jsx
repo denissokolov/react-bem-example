@@ -28,13 +28,12 @@ class Tabs extends React.Component {
     return (
       <div className="tabs">
         {items.map(tab => (
-          <span className="tabs__item">
+          <span className="tabs__item" key={tab.index}>
             <Tab
               onClick={this.onTabClick}
               index={tab.index}
               title={tab.title}
               active={activeTabIndex === tab.index}
-              key={tab.index}
             />
           </span>
         ))}

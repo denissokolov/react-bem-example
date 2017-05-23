@@ -33,8 +33,10 @@ const Header = ({ isAuthorized = false }) => {
           <Logo big />
         </div>
 
-        <div className="header__search">
-          <SearchForm />
+        <div className="header__center">
+          <div className="header__search">
+            <SearchForm />
+          </div>
         </div>
 
         <div className="header__auth">
