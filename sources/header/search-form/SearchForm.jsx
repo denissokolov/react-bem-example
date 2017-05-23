@@ -1,6 +1,6 @@
 import React from "react";
-import TextField from "../common/TextField";
-import Button from "../common/Button";
+import TextField from "../../common/text-field/TextField";
+import Button from "../../common/button/Button";
 
 import "./search-form.scss";
 

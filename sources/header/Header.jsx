@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Logo from "../common/Logo";
-import Tabs from "./Tabs";
-import SearchForm from "./SearchForm";
-import AuthForm from "./AuthForm";
-import UserInfo from "./UserInfo";
+import Logo from "../common/logo/Logo";
+import Tabs from "./tabs/Tabs";
+import SearchForm from "./search-form/SearchForm";
+import AuthForm from "./auth-form/AuthForm";
+import UserInfo from "./user-info/UserInfo";
 
 import "./header.scss";
 
