@@ -6,10 +6,11 @@ import Tab from "./Tab";
 class Tabs extends React.Component {
   static propTypes = {
     items: PropTypes.array.isRequired,
+    active: PropTypes.number,
   };
 
   state = {
-    activeTabIndex: null,
+    activeTabIndex: this.props.active || null,
   };
 
   onTabClick = (tabIndex) => {

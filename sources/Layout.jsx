@@ -4,7 +4,7 @@ import Header from "./header/Header";
 export default () => (
   <div className="layout">
     <div className="layout__header">
-      <Header/>
+      <Header />
     </div>
 
     <div className="layout__content"></div>

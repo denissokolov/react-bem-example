@@ -29,7 +29,7 @@ const Header = ({ isAuthorized = false }) => {
       </div>
 
       <div className="header__tabs">
-        <Tabs items={tabs} />
+        <Tabs items={tabs} active={1} />
       </div>
 
       <div className="header__search">
